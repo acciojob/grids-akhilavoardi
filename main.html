@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Layout</title>
 
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        .container {
+            width: 600px;
+            border: 5px solid rgb(4, 255, 4);
+            background-color: rgb(41, 0, 0);
+        }
+
+        .row {
+            height: 200px;
+            border: 5px solid rgb(255, 188, 188);
+        }
+
+        .row > div {
+            border: 2px dotted rgb(38, 38, 43);
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="col-sm-6 col-md-4" style="background-color: teal;">
+            Row 1 Col 1
+        </div>
+        <div class="col-sm-6 col-md-8" style="background-color: thistle;">
+            Row 1 Col 2
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="col-md-4 offset-md-2" style="background-color: tomato;">
+            Row 2 Col 1
+        </div>
+        <div class="col-md-4" style="background-color: turquoise;">
+            Row 2 Col 2
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-md-4" style="background-color: violet;">
+            Row 3 Col 1
+        </div>
+        <div class="col-sm-6 col-md-4" style="background-color: yellowgreen;">
+            Row 3 Col 2
+        </div>
+    </div>
+
+</div>
 
 </body>
-
 </html>
